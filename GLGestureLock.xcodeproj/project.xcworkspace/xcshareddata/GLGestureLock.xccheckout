@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F9D72B8E-1B2E-47F7-8927-0F3FEEBB5593</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GLGestureLock</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>635A888C-49D7-4339-92DC-6B4FC11A2509</key>
+		<string>https://github.com/zhuboxing/GLGestureLock.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GLGestureLock/GLGestureLock.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>635A888C-49D7-4339-92DC-6B4FC11A2509</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/zhuboxing/GLGestureLock.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>635A888C-49D7-4339-92DC-6B4FC11A2509</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>635A888C-49D7-4339-92DC-6B4FC11A2509</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GLGestureLock</string>
+		</dict>
+	</array>
+</dict>
+</plist>

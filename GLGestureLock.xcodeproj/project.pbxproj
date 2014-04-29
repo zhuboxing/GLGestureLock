@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8FA40223190F7930007A5BAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FA40222190F7930007A5BAD /* Foundation.framework */; };
+		8FA40225190F7930007A5BAD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FA40224190F7930007A5BAD /* CoreGraphics.framework */; };
+		8FA40227190F7930007A5BAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FA40226190F7930007A5BAD /* UIKit.framework */; };
+		8FA4022D190F7931007A5BAD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8FA4022B190F7931007A5BAD /* InfoPlist.strings */; };
+		8FA4022F190F7931007A5BAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA4022E190F7931007A5BAD /* main.m */; };
+		8FA40233190F7931007A5BAD /* GLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA40232190F7931007A5BAD /* GLAppDelegate.m */; };
+		8FA40236190F7931007A5BAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FA40234190F7931007A5BAD /* Main.storyboard */; };
+		8FA40239190F7931007A5BAD /* GLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA40238190F7931007A5BAD /* GLViewController.m */; };
+		8FA4023B190F7931007A5BAD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FA4023A190F7931007A5BAD /* Images.xcassets */; };
+		8FA40242190F7931007A5BAD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FA40241190F7931007A5BAD /* XCTest.framework */; };
+		8FA40243190F7931007A5BAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FA40222190F7930007A5BAD /* Foundation.framework */; };
+		8FA40244190F7931007A5BAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FA40226190F7930007A5BAD /* UIKit.framework */; };
+		8FA4024C190F7931007A5BAD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8FA4024A190F7931007A5BAD /* InfoPlist.strings */; };
+		8FA4024E190F7931007A5BAD /* GLGestureLockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA4024D190F7931007A5BAD /* GLGestureLockTests.m */; };
+		8FA4025D190F7995007A5BAD /* GLGestureLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA40258190F7995007A5BAD /* GLGestureLockView.m */; };
+		8FA4025E190F7995007A5BAD /* GLGestureLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA4025A190F7995007A5BAD /* GLGestureLockViewController.m */; };
+		8FA4025F190F7995007A5BAD /* GLSetGestureLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA4025C190F7995007A5BAD /* GLSetGestureLockViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8FA40245190F7931007A5BAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FA40217190F7930007A5BAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FA4021E190F7930007A5BAD;
+			remoteInfo = GLGestureLock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8FA4021F190F7930007A5BAD /* GLGestureLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLGestureLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FA40222190F7930007A5BAD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8FA40224190F7930007A5BAD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8FA40226190F7930007A5BAD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8FA4022A190F7930007A5BAD /* GLGestureLock-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GLGestureLock-Info.plist"; sourceTree = "<group>"; };
+		8FA4022C190F7931007A5BAD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8FA4022E190F7931007A5BAD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8FA40230190F7931007A5BAD /* GLGestureLock-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLGestureLock-Prefix.pch"; sourceTree = "<group>"; };
+		8FA40231190F7931007A5BAD /* GLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLAppDelegate.h; sourceTree = "<group>"; };
+		8FA40232190F7931007A5BAD /* GLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLAppDelegate.m; sourceTree = "<group>"; };
+		8FA40235190F7931007A5BAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8FA40237190F7931007A5BAD /* GLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLViewController.h; sourceTree = "<group>"; };
+		8FA40238190F7931007A5BAD /* GLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLViewController.m; sourceTree = "<group>"; };
+		8FA4023A190F7931007A5BAD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8FA40240190F7931007A5BAD /* GLGestureLockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GLGestureLockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FA40241190F7931007A5BAD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8FA40249190F7931007A5BAD /* GLGestureLockTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GLGestureLockTests-Info.plist"; sourceTree = "<group>"; };
+		8FA4024B190F7931007A5BAD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8FA4024D190F7931007A5BAD /* GLGestureLockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLGestureLockTests.m; sourceTree = "<group>"; };
+		8FA40257190F7995007A5BAD /* GLGestureLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLGestureLockView.h; sourceTree = "<group>"; };
+		8FA40258190F7995007A5BAD /* GLGestureLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLGestureLockView.m; sourceTree = "<group>"; };
+		8FA40259190F7995007A5BAD /* GLGestureLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLGestureLockViewController.h; sourceTree = "<group>"; };
+		8FA4025A190F7995007A5BAD /* GLGestureLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLGestureLockViewController.m; sourceTree = "<group>"; };
+		8FA4025B190F7995007A5BAD /* GLSetGestureLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLSetGestureLockViewController.h; sourceTree = "<group>"; };
+		8FA4025C190F7995007A5BAD /* GLSetGestureLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLSetGestureLockViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FA4021C190F7930007A5BAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FA40225190F7930007A5BAD /* CoreGraphics.framework in Frameworks */,
+				8FA40227190F7930007A5BAD /* UIKit.framework in Frameworks */,
+				8FA40223190F7930007A5BAD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FA4023D190F7931007A5BAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FA40242190F7931007A5BAD /* XCTest.framework in Frameworks */,
+				8FA40244190F7931007A5BAD /* UIKit.framework in Frameworks */,
+				8FA40243190F7931007A5BAD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8FA40216190F7930007A5BAD = {
+			isa = PBXGroup;
+			children = (
+				8FA40228190F7930007A5BAD /* GLGestureLock */,
+				8FA40247190F7931007A5BAD /* GLGestureLockTests */,
+				8FA40221190F7930007A5BAD /* Frameworks */,
+				8FA40220190F7930007A5BAD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8FA40220190F7930007A5BAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FA4021F190F7930007A5BAD /* GLGestureLock.app */,
+				8FA40240190F7931007A5BAD /* GLGestureLockTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FA40221190F7930007A5BAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FA40222190F7930007A5BAD /* Foundation.framework */,
+				8FA40224190F7930007A5BAD /* CoreGraphics.framework */,
+				8FA40226190F7930007A5BAD /* UIKit.framework */,
+				8FA40241190F7931007A5BAD /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8FA40228190F7930007A5BAD /* GLGestureLock */ = {
+			isa = PBXGroup;
+			children = (
+				8FA40257190F7995007A5BAD /* GLGestureLockView.h */,
+				8FA40258190F7995007A5BAD /* GLGestureLockView.m */,
+				8FA40259190F7995007A5BAD /* GLGestureLockViewController.h */,
+				8FA4025A190F7995007A5BAD /* GLGestureLockViewController.m */,
+				8FA4025B190F7995007A5BAD /* GLSetGestureLockViewController.h */,
+				8FA4025C190F7995007A5BAD /* GLSetGestureLockViewController.m */,
+				8FA40231190F7931007A5BAD /* GLAppDelegate.h */,
+				8FA40232190F7931007A5BAD /* GLAppDelegate.m */,
+				8FA40234190F7931007A5BAD /* Main.storyboard */,
+				8FA40237190F7931007A5BAD /* GLViewController.h */,
+				8FA40238190F7931007A5BAD /* GLViewController.m */,
+				8FA4023A190F7931007A5BAD /* Images.xcassets */,
+				8FA40229190F7930007A5BAD /* Supporting Files */,
+			);
+			path = GLGestureLock;
+			sourceTree = "<group>";
+		};
+		8FA40229190F7930007A5BAD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8FA4022A190F7930007A5BAD /* GLGestureLock-Info.plist */,
+				8FA4022B190F7931007A5BAD /* InfoPlist.strings */,
+				8FA4022E190F7931007A5BAD /* main.m */,
+				8FA40230190F7931007A5BAD /* GLGestureLock-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8FA40247190F7931007A5BAD /* GLGestureLockTests */ = {
+			isa = PBXGroup;
+			children = (
+				8FA4024D190F7931007A5BAD /* GLGestureLockTests.m */,
+				8FA40248190F7931007A5BAD /* Supporting Files */,
+			);
+			path = GLGestureLockTests;
+			sourceTree = "<group>";
+		};
+		8FA40248190F7931007A5BAD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8FA40249190F7931007A5BAD /* GLGestureLockTests-Info.plist */,
+				8FA4024A190F7931007A5BAD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FA4021E190F7930007A5BAD /* GLGestureLock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FA40251190F7931007A5BAD /* Build configuration list for PBXNativeTarget "GLGestureLock" */;
+			buildPhases = (
+				8FA4021B190F7930007A5BAD /* Sources */,
+				8FA4021C190F7930007A5BAD /* Frameworks */,
+				8FA4021D190F7930007A5BAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GLGestureLock;
+			productName = GLGestureLock;
+			productReference = 8FA4021F190F7930007A5BAD /* GLGestureLock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8FA4023F190F7931007A5BAD /* GLGestureLockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FA40254190F7931007A5BAD /* Build configuration list for PBXNativeTarget "GLGestureLockTests" */;
+			buildPhases = (
+				8FA4023C190F7931007A5BAD /* Sources */,
+				8FA4023D190F7931007A5BAD /* Frameworks */,
+				8FA4023E190F7931007A5BAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FA40246190F7931007A5BAD /* PBXTargetDependency */,
+			);
+			name = GLGestureLockTests;
+			productName = GLGestureLockTests;
+			productReference = 8FA40240190F7931007A5BAD /* GLGestureLockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FA40217190F7930007A5BAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GL;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = ZhuBoxing;
+				TargetAttributes = {
+					8FA4023F190F7931007A5BAD = {
+						TestTargetID = 8FA4021E190F7930007A5BAD;
+					};
+				};
+			};
+			buildConfigurationList = 8FA4021A190F7930007A5BAD /* Build configuration list for PBXProject "GLGestureLock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8FA40216190F7930007A5BAD;
+			productRefGroup = 8FA40220190F7930007A5BAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FA4021E190F7930007A5BAD /* GLGestureLock */,
+				8FA4023F190F7931007A5BAD /* GLGestureLockTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FA4021D190F7930007A5BAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FA4023B190F7931007A5BAD /* Images.xcassets in Resources */,
+				8FA4022D190F7931007A5BAD /* InfoPlist.strings in Resources */,
+				8FA40236190F7931007A5BAD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FA4023E190F7931007A5BAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FA4024C190F7931007A5BAD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FA4021B190F7930007A5BAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FA4025D190F7995007A5BAD /* GLGestureLockView.m in Sources */,
+				8FA4025E190F7995007A5BAD /* GLGestureLockViewController.m in Sources */,
+				8FA4022F190F7931007A5BAD /* main.m in Sources */,
+				8FA40239190F7931007A5BAD /* GLViewController.m in Sources */,
+				8FA4025F190F7995007A5BAD /* GLSetGestureLockViewController.m in Sources */,
+				8FA40233190F7931007A5BAD /* GLAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FA4023C190F7931007A5BAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FA4024E190F7931007A5BAD /* GLGestureLockTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8FA40246190F7931007A5BAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FA4021E190F7930007A5BAD /* GLGestureLock */;
+			targetProxy = 8FA40245190F7931007A5BAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8FA4022B190F7931007A5BAD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FA4022C190F7931007A5BAD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8FA40234190F7931007A5BAD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FA40235190F7931007A5BAD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8FA4024A190F7931007A5BAD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FA4024B190F7931007A5BAD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8FA4024F190F7931007A5BAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8FA40250190F7931007A5BAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8FA40252190F7931007A5BAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLGestureLock/GLGestureLock-Prefix.pch";
+				INFOPLIST_FILE = "GLGestureLock/GLGestureLock-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8FA40253190F7931007A5BAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLGestureLock/GLGestureLock-Prefix.pch";
+				INFOPLIST_FILE = "GLGestureLock/GLGestureLock-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8FA40255190F7931007A5BAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GLGestureLock.app/GLGestureLock";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLGestureLock/GLGestureLock-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GLGestureLockTests/GLGestureLockTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8FA40256190F7931007A5BAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GLGestureLock.app/GLGestureLock";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLGestureLock/GLGestureLock-Prefix.pch";
+				INFOPLIST_FILE = "GLGestureLockTests/GLGestureLockTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FA4021A190F7930007A5BAD /* Build configuration list for PBXProject "GLGestureLock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FA4024F190F7931007A5BAD /* Debug */,
+				8FA40250190F7931007A5BAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FA40251190F7931007A5BAD /* Build configuration list for PBXNativeTarget "GLGestureLock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FA40252190F7931007A5BAD /* Debug */,
+				8FA40253190F7931007A5BAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FA40254190F7931007A5BAD /* Build configuration list for PBXNativeTarget "GLGestureLockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FA40255190F7931007A5BAD /* Debug */,
+				8FA40256190F7931007A5BAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8FA40217190F7930007A5BAD /* Project object */;
+}
