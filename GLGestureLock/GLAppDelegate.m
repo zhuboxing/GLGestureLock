@@ -13,10 +13,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    GLViewController *vc = [[GLViewController alloc] init];
-    UINavigationController *rootNav = [[UINavigationController alloc] initWithRootViewController:vc];
-    self.window.rootViewController = rootNav;
+//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    GLViewController *vc = [[GLViewController alloc] init];
+//    UINavigationController *rootNav = [[UINavigationController alloc] initWithRootViewController:vc];
+//    self.window.rootViewController = rootNav;
     [self.window makeKeyAndVisible];
     return YES;
 }

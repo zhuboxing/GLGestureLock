@@ -10,7 +10,7 @@
 typedef void(^GLGestureCallBack)(NSString *key);
 
 @interface GLGestureLockView : UIView
-@property (nonatomic, assign) GLGestureCallBack callBack;
+@property (nonatomic, strong) GLGestureCallBack callBack;
 
 - (id)initWithFrame:(CGRect)frame callBack:(GLGestureCallBack)cb;
 @end

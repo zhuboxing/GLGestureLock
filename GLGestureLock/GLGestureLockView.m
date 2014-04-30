@@ -25,13 +25,18 @@
 @implementation GLGestureLockView
 @synthesize callBack;
 
+- (id)initWithFrame:(CGRect)frame
+{
+    return [self initWithFrame:frame callBack:nil];
+}
+
 - (id)initWithFrame:(CGRect)frame callBack:(GLGestureCallBack)cb
 {
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = [UIColor blackColor];
         
-        float marginTop = (self.frame.size.height - self.frame.size.width) / 2;
+        float marginTop = (self.frame.size.height - self.frame.size.width) / 2 + RADIUS;
         float xOffset = self.frame.size.width / NUMBER;
         for (int i = 0; i < NUMBER; i++) {
             for (int j = 0; j < NUMBER; j ++) {
@@ -47,7 +52,8 @@
 
 - (void)drawRect:(CGRect)rect
 {
-    [self drawLineWithColor:[UIColor colorWithWhite:1 alpha:0.8] width:5.0f startPoint:startPoint toPoint:endPoint];
+    [self drawLineWithColor:[UIColor colorWithWhite:1 alpha:0.8] width:5.0f];
+    [self drawArcWithColor:[UIColor colorWithWhite:1 alpha:0.5] radius:5];
 }
 
 - (UIView *)drawArc:(CGPoint)center round:(CGFloat)round
@@ -183,17 +189,17 @@
     startPoint = CGPointZero;
     endPoint = CGPointZero;
     overPoint = CGPointZero;
+    [pointArray removeAllObjects];
     [self setNeedsDisplay];
 }
 
 #pragma mark - Draw Line
-- (void)drawLineWithColor:(UIColor *)color width:(CGFloat)width startPoint:(CGPoint)start toPoint:(CGPoint)end
+- (void)drawLineWithColor:(UIColor *)color width:(CGFloat)width
 {
     CGContextRef context = UIGraphicsGetCurrentContext();
     
     CGContextSetLineJoin(context, kCGLineJoinRound);
     CGContextSetLineCap(context, kCGLineCapRound);
-    
     CGContextBeginPath(context);
     
     for (int i = 0; i < ((int)pointArray.count - 1); i++) {
@@ -203,8 +209,10 @@
         CGContextAddLineToPoint(context, endPointValue.CGPointValue.x, endPointValue.CGPointValue.y);;
     }
     
+    if (!CGPointEqualToPoint(startPoint, endPoint)) {
     CGContextMoveToPoint(context, startPoint.x, startPoint.y);
     CGContextAddLineToPoint(context, endPoint.x, endPoint.y);
+    }
     
     CGContextSetStrokeColorWithColor(context, color.CGColor);
     CGContextSetLineWidth(context, width);
@@ -212,17 +220,18 @@
     CGContextStrokePath(context);
 }
 
-- (void)drawArcWithColor:(UIColor *)color center:(CGPoint)center radius:(CGFloat)radius
+- (void)drawArcWithColor:(UIColor *)color radius:(CGFloat)radius
 {
     CGContextRef context = UIGraphicsGetCurrentContext();
-    
-    CGContextAddEllipseInRect(context, CGRectMake(center.x - radius, center.y - radius, 2 * radius, 2 * radius));
-    CGContextSetFillColorWithColor(context, [UIColor colorWithWhite:1 alpha:0.5].CGColor);
-    CGContextFillPath(context);
-    
-    CGContextAddEllipseInRect(context, CGRectMake(center.x - radius, center.y - radius, 2 * radius, 2 * radius));
-    CGContextSetStrokeColorWithColor(context, [UIColor colorWithWhite:1 alpha:0.5].CGColor);
-    CGContextStrokePath(context);
+    for (NSValue *pointValue in pointArray) {
+        CGContextAddEllipseInRect(context, CGRectMake(pointValue.CGPointValue.x - radius, pointValue.CGPointValue.y - radius, 2 * radius, 2 * radius));
+        CGContextSetFillColorWithColor(context, color.CGColor);
+        CGContextFillPath(context);
+        
+        CGContextAddEllipseInRect(context, CGRectMake(pointValue.CGPointValue.x - radius, pointValue.CGPointValue.y - radius, 2 * radius, 2 * radius));
+        CGContextSetStrokeColorWithColor(context, color.CGColor);
+        CGContextStrokePath(context);
+    }
 }
 
 @end
